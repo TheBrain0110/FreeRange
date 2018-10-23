@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>ModManager</identifier>
+    <version>1.0.1</version>
+    <dependencies>
+    </dependencies>
+    <incompatibleWith>
+    </incompatibleWith>
+    <loadBefore>
+    </loadBefore>
+    <loadAfter>
+    </loadAfter>
+    <manifestUri>https://rawgit.com/TheBrain0110/FreeRange/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/TheBrain0110/FreeRange/releases/latest</downloadUri>
+</Manifest>
