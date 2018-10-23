@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "MoisturePump"]/comps/li[@Class="CompProperties_TerrainPumpDry"]/daysToRadius</xpath>
+		<value>
+			<daysToRadius>15</daysToRadius>
+		</value>
+	</Operation>
+</Patch>
