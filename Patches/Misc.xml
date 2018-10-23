@@ -3,7 +3,14 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[defName = "MoisturePump"]/comps/li[@Class="CompProperties_TerrainPumpDry"]/daysToRadius</xpath>
 		<value>
-			<daysToRadius>15</daysToRadius>
+			<daysToRadius>14</daysToRadius>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "MoisturePump"]</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
 		</value>
 	</Operation>
 </Patch>
