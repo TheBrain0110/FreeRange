@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[@Name = "MakeStoneBlocksBase"]/targetCountAdjustment</xpath>
+		<value>
+			<targetCountAdjustment>40</targetCountAdjustment>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "CompostCorpse"]/products[1]</xpath>
+		<value>
+			<RawCompost>25</RawCompost>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "CompostCorpseCampfire"]/products[1]</xpath>
+		<value>
+			<RawCompost>20</RawCompost>
+		</value>
+	</Operation>
+</Patch>
