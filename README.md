@@ -1,1 +1,4 @@
 # FreeRange
+A simple Rimworld mod that increases the nutrition value of the Haygrass plant to match that of harvested hay, allowing your animals to graze free-range effectively.
+
+It's still usually more efficient to cut and store the hay, as then the animals will eat the exact amount they need, as opposed to the whole plant which may be more than they needed and thus wasted. This is countered somewhat by making the Haygrass plant grow (a litte more than) twice as quickly and yield (a little more than) half the Hay when harvested. Good for your animals eating it, but more work for your farmers if you do want to harvest it.
