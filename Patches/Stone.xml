@@ -1,23 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/RecipeDef[@Name = "MakeStoneBlocksBase"]/targetCountAdjustment</xpath>
-		<value>
-			<targetCountAdjustment>40</targetCountAdjustment>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/RecipeDef[defName = "CompostCorpse"]/products[1]</xpath>
+		<xpath>/Defs/RecipeDef[defName = "CompostCorpse"]/products/RawCompost</xpath>
 		<value>
 			<RawCompost>25</RawCompost>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/RecipeDef[defName = "CompostCorpseCampfire"]/products[1]</xpath>
+		<xpath>/Defs/RecipeDef[defName = "CompostCorpseCampfire"]/products/RawCompost</xpath>
 		<value>
 			<RawCompost>20</RawCompost>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "MakeCrushedRocks"]/label</xpath>
+		<value>
+			<label>Make 4 crushed rocks</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "MakeCrushedRocks"]/products/CrushedRocks</xpath>
+		<value>
+			<CrushedRocks>4</CrushedRocks>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "MakeCrushedRocksBlock"]/label</xpath>
+		<value>
+			<label>Make 4 crushed rocks (from blocks)</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "MakeCrushedRocksBlock"]/products/CrushedRocks</xpath>
+		<value>
+			<CrushedRocks>4</CrushedRocks>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "MakeCrushedRocks5"]/label</xpath>
+		<value>
+			<label>Make 20 crushed rocks</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "MakeCrushedRocks5"]/products/CrushedRocks</xpath>
+		<value>
+			<CrushedRocks>20</CrushedRocks>
 		</value>
 	</Operation>
 </Patch>
