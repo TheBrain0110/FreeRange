@@ -13,4 +13,21 @@
 			<minifiedDef>MinifiedThing</minifiedDef>
 		</value>
 	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName = "MakePackedLunch"]/recipeUsers</xpath>
+		<value>
+			<li>Campfire</li>
+            <li>CraftingSpot</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "MealSurvivalPack" or defName = "Pemmican" or defName = "SmokedMeat"]/ingestible</xpath>
+		<value>
+            <chairSearchRadius>1</chairSearchRadius>
+		</value>
+	</Operation>
+
+    <!-- TODO Add recipe changes in local copy of Skylights as patch -->
 </Patch>
