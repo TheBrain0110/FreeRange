@@ -20,4 +20,37 @@
 			<harvestYield>11</harvestYield>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "Make_Kibble"]/products/Kibble</xpath>
+		<value>
+			<Kibble>500</Kibble>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "Make_Kibble"]/ingredients/li[2]/count</xpath>
+		<value>
+			<count>2</count>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Kibble"]/statBases</xpath>
+		<value>
+			<statBases>
+      			<MarketValue>0.2</MarketValue>
+      			<Mass>0.0025</Mass>
+      			<Nutrition>0.01</Nutrition>
+      			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Kibble"]</xpath>
+		<value>
+			<stackLimit>1000</stackLimit>
+		</value>
+	</Operation>
 </Patch>
