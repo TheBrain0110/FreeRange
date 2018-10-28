@@ -21,6 +21,14 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_Haygrass"]/plant</xpath>
+		<value>
+			<sowWork>40</sowWork>
+			<harvestWork>60</harvestWork>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/RecipeDef[defName = "Make_Kibble"]/products/Kibble</xpath>
 		<value>
