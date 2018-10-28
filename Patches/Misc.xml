@@ -29,5 +29,26 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "VanometricPowerCell"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+		<value>
+			<basePowerConsumption>-5000</basePowerConsumption>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "InfiniteChemreactor"]/comps/li[@Class="CompProperties_Spawner"]</xpath>
+		<value>
+			<li Class="CompProperties_Spawner">
+				<requiresPower>true</requiresPower>
+				<thingToSpawn>Chemfuel</thingToSpawn>
+				<spawnCount>35</spawnCount>
+				<spawnIntervalRange><min>60000</min><max>60000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>false</showMessageIfOwned>
+      		</li>
+		</value>
+	</Operation>
+
     <!-- TODO Add recipe changes in local copy of Skylights as patch -->
 </Patch>
