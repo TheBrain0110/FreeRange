@@ -50,5 +50,12 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "CultivatorTools_DroneCultivator" or defName = "CultivatorTools_CultivatorWithLamp"]/modExtensions/li[@Class="ProjectRimFactory.CultivatorTools.CultivatorDefModExtension"]/squareAreaRadius</xpath>
+		<value>
+			<squareAreaRadius>7</squareAreaRadius>
+		</value>
+	</Operation>
+
     <!-- TODO Add recipe changes in local copy of Skylights as patch -->
 </Patch>
