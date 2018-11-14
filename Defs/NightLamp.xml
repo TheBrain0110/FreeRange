@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="LampBase">
+    <defName>NightLamp</defName>
+    <label>Greenhouse Night Lamp</label>
+    <description>A lamp for greenhouses or gardens with natural light during the day, to continue growing plants at night. Rainproof.</description>
+    <thingClass>Building_SunLamp</thingClass>
+    <designationCategory>RFF_Farm</designationCategory>
+    <graphicData>
+      <texPath>Things/Building/Production/LampSun</texPath>
+    </graphicData>
+    <blockWind>true</blockWind>
+    <tickerType>Rare</tickerType>
+    <statBases>
+      <WorkToBuild>330</WorkToBuild>
+      <Mass>4.5</Mass>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>10</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>9.0</overlightRadius>
+        <glowRadius>13</glowRadius>
+        <glowColor>(325,165,120,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>2200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.7</startTime>
+        <endTime>0.3</endTime>
+        <offMessage>Off for daylight</offMessage>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>1</heatPerSecond>
+      </li>
+    </comps>
+    <!-- Determined by trial and error
+    This value isn't perfect because these radii use different algorithms
+    but it matches in this case-->
+    <specialDisplayRadius>7.5</specialDisplayRadius>
+  </ThingDef>
+</Defs>
