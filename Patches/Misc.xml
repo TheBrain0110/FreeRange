@@ -57,5 +57,36 @@
 		</value>
 	</Operation>
 
-    <!-- TODO Add recipe changes in local copy of Skylights as patch -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "SmeltGlass"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>4</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>SandPile</li>
+						</thingDefs>
+					</filter>
+					<count>4</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "SmeltGlass"]/products</xpath>
+		<value>
+			<products>
+				<GlassPane>8</GlassPane>
+			</products>
+		</value>
+	</Operation>
 </Patch>
