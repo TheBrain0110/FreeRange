@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>Defs/ThingDef[@Name = "ChanPart_Base"]</xpath>
+      </li>
+      
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "ChanPart_1x1_Support" or defName = "ChanPart_2x2_Support" or defName = "ChanPart_3x3_Support"]/comps</xpath>
+        <value>
+          <li Class="CompProperties_Flickable"/>
+          <li Class="Merthsoft.AutoOnAutoOff.CompProperties.ProximityPower">
+            <checkRate>250</checkRate>
+            <autoOn>true</autoOn>
+            <autoOff>true</autoOff>
+            <showOverrideButton>true</showOverrideButton>
+          </li>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "ChanPart_1x1_Support" or defName = "ChanPart_2x2_Support" or defName = "ChanPart_3x3_Support"]</xpath>
+        <value>
+          <tickerType>Rare</tickerType>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
