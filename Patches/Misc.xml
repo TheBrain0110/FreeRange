@@ -29,6 +29,13 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "SmokedMeat"]</xpath>
+		<value>
+            <stackLimit>160</stackLimit>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[defName = "VanometricPowerCell"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
 		<value>
