@@ -61,4 +61,24 @@
 			<stackLimit>1000</stackLimit>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Chicken"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
+		<value>
+			<eggLayIntervalDays>1</eggLayIntervalDays>
+		</value>
+	</Operation>
+
+	<!-- <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Meat_Human"]</xpath>
+		<value>
+			<statBases>
+				<Nutrition>0.5</Nutrition>
+				<MaxHitPoints>150</MaxHitPoints>
+				<DeteriorationRate>20</DeteriorationRate>
+				<Mass>0.1</Mass>
+				<MarketValue>25</MarketValue>
+			</statBases>
+		</value>
+	</Operation> -->
 </Patch>
