@@ -7,32 +7,32 @@
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "MoisturePump"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/RecipeDef[defName = "MakePackedLunch"]/recipeUsers</xpath>
 		<value>
 			<li>Campfire</li>
-            <li>CraftingSpot</li>
+			<li>CraftingSpot</li>
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "MealSurvivalPack" or defName = "Pemmican" or defName = "SmokedMeat"]/ingestible</xpath>
 		<value>
-            <chairSearchRadius>1</chairSearchRadius>
+			<chairSearchRadius>1</chairSearchRadius>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "SmokedMeat"]</xpath>
 		<value>
-            <stackLimit>160</stackLimit>
+			<stackLimit>160</stackLimit>
 		</value>
 	</Operation>
 
@@ -50,10 +50,13 @@
 				<requiresPower>true</requiresPower>
 				<thingToSpawn>Chemfuel</thingToSpawn>
 				<spawnCount>35</spawnCount>
-				<spawnIntervalRange><min>60000</min><max>60000</max></spawnIntervalRange>
+				<spawnIntervalRange>
+					<min>60000</min>
+					<max>60000</max>
+				</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<showMessageIfOwned>false</showMessageIfOwned>
-      		</li>
+			</li>
 		</value>
 	</Operation>
 
